@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VDC dropdown mockup</title>
+        <style>
+            body {  /** this is just be the default on VDC, this wouldn't need to be added to common.css */
+                background-color:#262626;
+                color: #b9b7b5;
+                font: .8em sans-serif;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropbtn {
+                background-color: #393939;
+                align-items: center;
+                padding: 4px;
+
+                border: 1px solid #454545;
+                border-radius: 3px;
+            }
+
+            .dropdown-content {
+                display: none;
+                padding: 4px;
+                background-color: #393939;
+                border: 1px solid #454545;
+                border-radius: 3px;
+            }
+
+            /* Show the dropdown menu on hover */
+            .dropdown:hover .dropdown-content {display: block;}
+        </style>
+    </head>
+    <body>
+        <div class="dropdown">
+            <div class="dropbtn"><img src="Flag-en.png" style="vertical-align: middle;"> English</div> <!-- vertical-align:middle is the default on VDC -->
+            <div class="dropdown-content plainlinks">
+                <a style="color: unset; text-decoration: none;" href="a"><img src="Flag-fr.png" style="vertical-align: middle;"> Français</a><br> <!-- in reality, the text and the image would have to both individually link to the translation-->
+                <a><img src="Flag-ru.png" style="vertical-align: middle;"> Русский</a>
+            </div>
+        </div>
+    </body>
+</html>
